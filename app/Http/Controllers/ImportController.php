@@ -10,7 +10,7 @@ class ImportController extends Controller
 {
     public function show()
     {
-    	return view('import.form');
+    	return view('import');
     }
 
     public function import(Request $request)

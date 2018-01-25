@@ -1,3 +1,7 @@
+html, body{
+	font-size: 14px;
+}
+
 .container{
 	min-height: 100vh;
 	display: grid;
@@ -18,8 +22,42 @@ footer p{
 	font-size: 80%;
 }
 
-@media screen and (min-width: 960px){
+.container{
+	max-width: 100%;
+}
+
+@media screen and (min-width: 992px){
 	.container {
     	max-width: 860px;
 	}
+}
+
+@media screen and (max-width: 790px){
+	.time, .room {
+    	font-size: 0.8em;
+	}
+
+	.container{
+		padding: 15px 0;
+	}
+
+	.navbar{
+		padding: 0 15px;
+	}
+
+	.table th, .table td{
+		padding: .25rem;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.navbar, .form-inline{
+		flex-direction: column;
+	}
+
+	.form-inline .btn{
+		margin-top: .5rem;
+	}
+
 }

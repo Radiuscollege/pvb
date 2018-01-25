@@ -14,6 +14,4 @@
 Route::get('/import', 'ImportController@show')->name('import.show');
 Route::post('/import', 'ImportController@import')->name('import.import');
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', 'InterviewController@index')->name('home');
